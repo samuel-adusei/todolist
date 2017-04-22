@@ -6,7 +6,15 @@ h1 {
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
+
 }
+
+body {
+background: #159957;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 
 #container 	{
@@ -23,11 +31,27 @@ li {
 	color: #666;
 }
 
+
 	
 li:nth-child(2n){
 	background: #f7f7f7;
 	//changes the color of the second todo 
 }
+
+span {
+	background: blue;
+	margin-right: 30px;
+	text-align: center;
+	color: black;
+	width: 0;
+	display: inline-block;
+}
+
+li:hover span {
+	width: 40px;
+}
+
+// this shows when u click on it 
 
 input {
 	font-size: 18px;
